@@ -14,8 +14,8 @@ app.use(cors());
 const db = mysql.createConnection({
     host: "localhost",
     user: "root", // Change this to your MySQL username
-    password: "kaushika", // Add your MySQL password if you have one
-    database: "learnloom"
+    $password = "YOUR PASSWORD"; // XAMPP password
+    $dbname = "DB_NAME";
 });
 
 db.connect(err => {
