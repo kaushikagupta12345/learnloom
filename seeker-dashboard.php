@@ -13,8 +13,8 @@ if (!isset($_SESSION['downloads'])) {
 
 $servername = "localhost";
 $username = "root";
-$password = "kaushika";
-$dbname = "learnloom";
+$password = "YOUR PASSWORD"; // XAMPP password
+$dbname = "DB_NAME";
 // Establish database connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
