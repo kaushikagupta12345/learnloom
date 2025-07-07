@@ -9,8 +9,8 @@ if (!isset($_SESSION['username']) || $_SESSION['role'] != 'provider') {
 // Database connection
 $servername = "localhost";
 $username = "root";
-$password = "kaushika";
-$dbname = "learnloom";
+$password = "YOUR PASSWORD"; // XAMPP password
+$dbname = "DB_NAME";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
