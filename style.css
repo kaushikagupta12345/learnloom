@@ -1,0 +1,252 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #ffffff;
+}
+.logo{
+    font-size: 29px;
+}
+/* Header and Navbar */
+h1{
+    font-size: 40px;
+    font-family:papyrus;
+    
+}
+p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: rgb(51, 3, 3);
+    font-weight: 1000;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 30px 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #6416b6;
+    
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px;
+    background: linear-gradient(to left, #a974e2, #6692df);
+    color: white;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 20px;
+    background-color: rgb(173, 220, 220);
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.gallery-item {
+    max-width: 200px;
+    text-align: center;
+    
+}
+
+.gallery-item img {
+    width: 100%;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    border: #333;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.5);
+}
+
+#about{
+    padding: 30px;
+    background-color: rgb(111, 174, 176);
+}
+/*faq section*/
+/* FAQ Section Styling */
+.faq-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #ccc;
+}
+
+.faq-section h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0c357c;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+.faq-item {
+    background-color:rgb(245, 243, 240);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.faq-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question h3 {
+    font-size: 1.6rem;
+    color: #2c6ad4;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.faq-answer p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.faq-question:hover {
+    color: #1a63d3;
+}
+
+/* Make the FAQ section responsive */
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 30px 10px;
+    }
+
+    .faq-section h2 {
+        font-size: 2rem;
+    }
+
+    .faq-question h3 {
+        font-size: 1.4rem;
+    }
+
+    .faq-answer p {
+        font-size: 1rem;
+    }
+}
+
+/* Footer */
+footer {
+    background: #4c4b4b;
+    color: rgb(249, 240, 240);
+    text-align: center;
+    padding: 50px;
+}
+#contact p{
+    color: #a5df07;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: papyrus;
+    font-size: 25px;
+    background: rgba(70, 70, 70, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background:#ffffff;
+    padding: 3rem;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+}
+.modal-content .close {
+    position: absolute;
+    top: 50px;
+    right: 400px;
+    font-size: 4rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #f50303;
+    font-weight: bold;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.modal-content input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #dedddf;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: #3168e8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.modal-content button:hover {
+    background: #3a02f3;
+}
+
